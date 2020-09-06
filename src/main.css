@@ -117,6 +117,10 @@ section {
   width: 25%
 }
 
+#logo img {
+	width: 100%
+}
+
 #info {
   width: 75%;
 	vertical-align: top;
@@ -144,6 +148,10 @@ section {
 	#logo {
   	width: 100%;
 	}	
+
+	#logo img {
+		width: 100%
+	}
 
 	#info, #info p {
 		width: 100%;

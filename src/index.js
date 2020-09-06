@@ -1,1 +1,3 @@
-console.log("hello webpack")
+import pageLoad from "./pageLoad"
+
+pageLoad()
