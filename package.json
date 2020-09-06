@@ -1,0 +1,23 @@
+{
+  "name": "restaurant-page-top",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/abkhale17/restaurant-page-TOP.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/abkhale17/restaurant-page-TOP/issues"
+  },
+  "homepage": "https://github.com/abkhale17/restaurant-page-TOP#readme",
+  "devDependencies": {
+    "webpack": "^4.44.1",
+    "webpack-cli": "^3.3.12"
+  }
+}
