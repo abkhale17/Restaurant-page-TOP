@@ -90,10 +90,23 @@
 /*!**********************!*\
   !*** ./src/index.js ***!
   \**********************/
-/*! no static exports found */
-/***/ (function(module, exports) {
+/*! no exports provided */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
-eval("console.log(\"hello webpack\")\n\n//# sourceURL=webpack:///./src/index.js?");
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _pageLoad__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./pageLoad */ \"./src/pageLoad.js\");\n\n\nObject(_pageLoad__WEBPACK_IMPORTED_MODULE_0__[\"default\"])()\n\n//# sourceURL=webpack:///./src/index.js?");
+
+/***/ }),
+
+/***/ "./src/pageLoad.js":
+/*!*************************!*\
+  !*** ./src/pageLoad.js ***!
+  \*************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\nconst pageLoad = () => {\n\tconst content = document.getElementById(\"content\");\n\n\tconst nav = document.createElement('div');\n\tconst ul = document.createElement('ul');\n\tconst link1 = document.createElement('a');\n\tconst home = document.createElement('li')\n\tconst link2 = document.createElement('a');\n\tconst menu = document.createElement('li');\n\tconst link3 = document.createElement('a');\n\tconst chefs = document.createElement('li')\n\tconst link4 = document.createElement('a');\n\tconst about = document.createElement('li');\n\tnav.setAttribute(\"id\",\"navbar\");\n\tlink1.setAttribute(\"href\",\"#home\");\n\tlink2.setAttribute(\"href\",\"#menu\");\n\tlink3.setAttribute(\"href\",\"#chefs\");\n\tlink4.setAttribute(\"href\",\"#aboutUs\");\n\thome.innerHTML = \"Home\"\n\tmenu.innerHTML = \"Menu\"\n\tchefs.innerHTML = \"Chefs\"\n\tabout.innerHTML = \"About Us\"\n\tlink1.appendChild(home)\n\tlink2.appendChild(menu)\n\tlink3.appendChild(chefs)\n\tlink4.appendChild(about)\n\tul.appendChild(link1)\n\tul.appendChild(link2)\n\tul.appendChild(link3)\n\tul.appendChild(link4)\n\tnav.appendChild(ul);\n\tcontent.appendChild(nav)\n\n\tconst description = document.createElement('div');\n\tconst section1 = document.createElement('section');\n\tconst img = document.createElement('img');\n\tconst section2 = document.createElement('section');\n\tconst header = document.createElement('header');\n\tconst title = document.createElement('h1');\n\tconst para = document.createElement('p');\n\tdescription.setAttribute(\"id\",\"descript\");\n\tdescription.setAttribute(\"class\", \"group\");\n\tsection1.setAttribute(\"id\",\"logo\");\n\timg.setAttribute(\"src\",\"../src/assets/losPolosHermanos.jpg\")\n\tsection2.setAttribute(\"id\",\"info\");\n\ttitle.innerHTML = \"Los Pollos Hermanos\";\n\tpara.innerHTML = \"Los Pollos Hermanos (Spanish for The Chicken Brothers) is a fried chicken fast food restaurant that originated in the television series Breaking Bad and Better Call Saul. In the fictional universe of Breaking Bad, Los Pollos Hermanos is a front organization for Gus Fring's meth manufacturing and distribution operation. The set used for the restaurant in the show was at a Twisters branch in South Valley, New Mexico, and Twisters has seen an increase in business attributed to being associated with Breaking Bad. Due to the show's popularity, Los Pollos Hermanos has appeared on numerous occasions and locations as a real-life pop-up restaurant.\"\n\theader.appendChild(title);\n\tsection1.appendChild(img);\n\tsection2.appendChild(header);\n\tsection2.appendChild(para);\n\tdescription.appendChild(section1);\n\tdescription.appendChild(section2);\n\tcontent.appendChild(description)\n\n\n\tconst gallery = document.createElement('div');\n\tconst slide1 = document.createElement('img');\n\tconst slide2 = document.createElement('img');\n\tconst slide3 = document.createElement('img');\n\tgallery.setAttribute(\"id\",\"gallery\");\n\tslide1.setAttribute(\"src\",\"../src/assets/lph2.jpg\")\n\tslide2.setAttribute(\"src\",\"../src/assets/lph3.jpg\")\n\tslide3.setAttribute(\"src\",\"../src/assets/lph4.jpg\")\n\tgallery.appendChild(slide1);\n\tgallery.appendChild(slide2);\n\tgallery.appendChild(slide3)\n\tcontent.appendChild(gallery)\n}\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (pageLoad);\n\n//# sourceURL=webpack:///./src/pageLoad.js?");
 
 /***/ })
 
