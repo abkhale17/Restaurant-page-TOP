@@ -1,0 +1,153 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 2. v2.0 | 20110126
+	License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*
+	========================================
+	Grid
+	========================================
+*/
+
+*,
+*:before,
+*:after {
+	-webkit-box-sizing: border-box;
+		-moz-box-sizing: border-box;
+			box-sizing: border-box;
+}
+
+/*
+  ========================================
+  Clearfix
+  ========================================
+*/
+
+.group:before,
+.group:after {
+  content: "";
+  display: table;
+}
+.group:after {
+  clear: both;
+}
+.group {
+  clear: both;
+  *zoom: 1;
+}
+
+/*
+  ========================================
+  Custom styles
+  ========================================
+*/
+body {
+  color: #888;
+  font: 300 18px/28px ubuntu , "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+h1 {
+	font-size: 32px;
+	font-weight: bold;
+	text-align: center;
+}
+
+#content {
+	margin: 0 auto;
+}
+
+li {
+	display: inline-block;
+	width: 25%;
+	text-align: center;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	background-color: grey;
+	border-left: 0.2px solid #a29999;
+}
+
+section {
+	display: inline-block;
+}
+
+#logo {
+  width: 25%
+}
+
+#info {
+  width: 75%;
+	vertical-align: top;
+}
+
+#info, #info p {
+	padding: 30px;
+}
+
+#descript img {
+	float: left;
+}
+
+#gallery img {
+	margin-left: 0.1%;
+	margin-right: 0.1%;
+	width: 49.8%;
+}
+
+@media all and (max-width: 600px) {
+	#gallery img {
+		width: 100%;
+	}
+
+	#logo {
+  	width: 100%;
+	}	
+
+	#info, #info p {
+		width: 100%;
+		float:left;
+		padding: 15px;
+	}
+}
