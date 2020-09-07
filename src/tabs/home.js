@@ -1,46 +1,7 @@
-const pageLoad = () => {
-	console.log("home page loaded")
+const home = () => {
 	const content = document.getElementById("content");
-
-	const nav = document.createElement('div');
-	const ul = document.createElement('ul');
-	const link1 = document.createElement('button');
-	const home = document.createElement('li')
-	const link2 = document.createElement('button');
-	const menu = document.createElement('li');
-	const link3 = document.createElement('button');
-	const chefs = document.createElement('li')
-	const link4 = document.createElement('button');
-	const contacts = document.createElement('li')
-	const link5 = document.createElement('button');
-	const about = document.createElement('li');
-	nav.setAttribute("id","navbar");
-	link1.setAttribute("id","homeBtn");
-	link2.setAttribute("id","menuBtn");
-	link3.setAttribute("id","chefsBtn");
-	link4.setAttribute("id","contactsBtn");
-	link5.setAttribute("id","aboutUsBtn");
-	home.innerHTML = "Home"
-	menu.innerHTML = "Menu"
-	chefs.innerHTML = "Chefs"
-	contacts.innerHTML = "Contacts"
-	about.innerHTML = "About"
-	link1.appendChild(home)
-	link2.appendChild(menu)
-	link3.appendChild(chefs)
-	link4.appendChild(contacts)
-	link5.appendChild(about)
-	ul.appendChild(link1)
-	ul.appendChild(link2)
-	ul.appendChild(link3)
-	ul.appendChild(link4)
-	ul.appendChild(link5)
-	nav.appendChild(ul);
-	content.appendChild(nav)
-
-	const variableContent = document.createElement('div');
-	variableContent.setAttribute("id","varContent");
-
+	const variableContent = document.getElementById("varContent");
+	
 	const description = document.createElement('div');
 	const section1 = document.createElement('section');
 	const img = document.createElement('img');
@@ -79,4 +40,4 @@ const pageLoad = () => {
 	content.appendChild(variableContent)
 }
 
-export default pageLoad
+export default home

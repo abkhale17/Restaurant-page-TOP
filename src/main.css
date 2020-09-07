@@ -101,12 +101,9 @@ h1 {
 
 li {
 	display: inline-block;
-	width: 25%;
 	text-align: center;
 	padding-top: 15px;
 	padding-bottom: 15px;
-	background-color: grey;
-	border-left: 0.2px solid #a29999;
 }
 
 section {
@@ -114,7 +111,7 @@ section {
 }
 
 #logo {
-  width: 25%
+  width:20%
 }
 
 #logo img {
@@ -138,6 +135,16 @@ section {
 	margin-left: 0.1%;
 	margin-right: 0.1%;
 	width: 49.8%;
+}
+
+ul button {
+  background-color: gray;
+  width: 20%;
+  border-style: none;
+  border-left-style: none;
+  padding: 0px;
+  border-left: 0.1px solid #aca0a0;
+  cursor: pointer;
 }
 
 @media all and (max-width: 600px) {
