@@ -1,0 +1,244 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 2. v2.0 | 20110126
+	License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*
+	========================================
+	Grid
+	========================================
+*/
+
+*,
+*:before,
+*:after {
+	-webkit-box-sizing: border-box;
+		-moz-box-sizing: border-box;
+			box-sizing: border-box;
+}
+
+/*
+	========================================
+	Clearfix
+	========================================
+*/
+
+.group:before,
+.group:after {
+	content: "";
+	display: table;
+}
+.group:after {
+	clear: both;
+}
+.group {
+	clear: both;
+	*zoom: 1;
+}
+
+/*
+	========================================
+	Custom styles
+	========================================
+*/
+body {
+	color: #888;
+	font: 300 18px/28px ubuntu , "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+h1 {
+	font-size: 32px;
+	font-weight: bold;
+	text-align: center;
+}
+
+#content {
+	margin: 0 auto;
+	position: relative;
+}
+
+li, .dropdown{
+	display: inline-block;
+	text-align: center;
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+
+section {
+	display: inline-block;
+}
+
+#logo {
+	width:20%
+}
+
+#logo img {
+	width: 100%
+}
+
+#info {
+	width: 75%;
+	vertical-align: top;
+}
+
+#info, #info p {
+	padding: 30px;
+	line-height: 38px;
+	font-size: 23px;
+	font-style: italic;
+}
+
+#descript img {
+	float: left;
+}
+
+#gallery img {
+	margin-left: 0.1%;
+	margin-right: 0.1%;
+	width: 49.8%;
+}
+
+ul button {
+	background-color: black;
+	color: white;
+	width: 20%;
+	border-style: none;
+	border-left-style: none;
+	padding: 0px;
+	border-left: 0.1px solid #aca0a0;
+	cursor: pointer;
+	font-size: 18px;
+}
+
+ul button:hover {
+	background-color: #3c3c3c;
+	color: #cecece;
+}
+ul button:focus {
+  background-color: #b54242;
+  color: white;
+}
+
+.dropdown-content button {
+	width: 100%;
+	border-top: 0.1px solid #aca0a0;
+	border-left: 0.1px solid #aca0a0;
+}
+
+.dropdown-content {
+	position: absolute;
+	top: 51px;
+	display: none;
+	width: 20%;
+	margin-left: 20%;
+}
+
+/*
+	========================================
+	Styling Tables
+	========================================
+*/
+
+.Tables {
+	border-collapse: collapse;
+	width: 100%;
+	margin-top: 3%
+}
+
+.Tables td, .Tables th {
+	border: 1px solid #ddd;
+	padding: 8px;
+}
+
+.Tables tr:nth-child(odd){background-color: #f2f2f2;}
+
+.Tables tr:hover {background-color: #ddd;}
+
+.Tables th {
+	padding-top: 12px;
+	padding-bottom: 12px;
+	padding-left: 12px;
+	text-align: left;
+	background-color: #424242;
+	color: white;
+}
+
+/*
+	========================================
+	Mobile media
+	========================================
+*/
+
+
+@media all and (max-width: 600px) {
+	body {
+		font-size: 18px;
+	}
+	#gallery img {
+		width: 100%;
+	}
+
+	#logo {
+			width: 100%;
+	}	
+
+	#logo img {
+		width: 100%
+	}
+
+	#info, #info p {
+		width: 100%;
+		float:left;
+		padding: 15px;
+		line-height: 31px;
+		font-size: 19px;
+		font-style: italic;
+	}
+
+	.dropdown-content {
+		width: 70%;
+	}
+}
