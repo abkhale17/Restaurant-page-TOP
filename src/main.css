@@ -97,9 +97,10 @@ h1 {
 
 #content {
 	margin: 0 auto;
+	position: relative;
 }
 
-li {
+li, .dropdown{
 	display: inline-block;
 	text-align: center;
 	padding-top: 15px;
@@ -147,13 +148,27 @@ ul button {
   cursor: pointer;
 }
 
+.dropdown-content button {
+	width: 100%;
+	border-top: 0.1px solid #aca0a0;
+	border-left: 0.1px solid #aca0a0;
+}
+
+.dropdown-content {
+	position: absolute;
+	top: 45px;
+	display: none;
+	width: 20%;
+    margin-left: 20%;
+}
+
 @media all and (max-width: 600px) {
 	#gallery img {
 		width: 100%;
 	}
 
 	#logo {
-  	width: 100%;
+  		width: 100%;
 	}	
 
 	#logo img {

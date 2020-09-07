@@ -5,9 +5,15 @@ const pageLoad = () => {
 	const nav = document.createElement('div');
 	const ul = document.createElement('ul');
 	const link1 = document.createElement('button');
-	const home = document.createElement('li')
+	const home = document.createElement('li');
+	// const dropdown = document.createElement('div');
 	const link2 = document.createElement('button');
 	const menu = document.createElement('li');
+	const dropdownContent = document.createElement('ul');
+	const vegLink = document.createElement('button');
+	const veg = document.createElement('li');
+	const nonvegLink = document.createElement('button');
+	const nonveg = document.createElement('li');
 	const link3 = document.createElement('button');
 	const chefs = document.createElement('li')
 	const link4 = document.createElement('button');
@@ -17,11 +23,15 @@ const pageLoad = () => {
 	nav.setAttribute("id","navbar");
 	link1.setAttribute("id","homeBtn");
 	link2.setAttribute("id","menuBtn");
+	vegLink.setAttribute("id", "veg")
+	nonvegLink.setAttribute("id", "nonveg");
 	link3.setAttribute("id","chefsBtn");
 	link4.setAttribute("id","contactsBtn");
 	link5.setAttribute("id","aboutUsBtn");
 	home.innerHTML = "Home"
 	menu.innerHTML = "Menu"
+	veg.innerHTML = "Veg"
+	nonveg.innerHTML = "Non Veg"
 	chefs.innerHTML = "Chefs"
 	contacts.innerHTML = "Contacts"
 	about.innerHTML = "About"
@@ -30,12 +40,22 @@ const pageLoad = () => {
 	link3.appendChild(chefs)
 	link4.appendChild(contacts)
 	link5.appendChild(about)
+
+	vegLink.appendChild(veg)
+	nonvegLink.appendChild(nonveg)
+
+	dropdownContent.setAttribute("class","dropdown-content")
+
+	dropdownContent.appendChild(vegLink);
+	dropdownContent.appendChild(nonvegLink)
+
 	ul.appendChild(link1)
 	ul.appendChild(link2)
 	ul.appendChild(link3)
 	ul.appendChild(link4)
 	ul.appendChild(link5)
 	nav.appendChild(ul);
+	nav.appendChild(dropdownContent)
 	content.appendChild(nav)
 
 	const variableContent = document.createElement('div');
@@ -62,7 +82,6 @@ const pageLoad = () => {
 	description.appendChild(section1);
 	description.appendChild(section2);
 	variableContent.appendChild(description)
-
 
 	const gallery = document.createElement('div');
 	const slide1 = document.createElement('img');
