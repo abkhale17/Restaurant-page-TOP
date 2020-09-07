@@ -1,6 +1,5 @@
 import pageLoad from "./pageLoad"
 import home from "./tabs/home"
-import menu from "./tabs/menu"
 import veg from "./tabs/veg"
 import nonveg from "./tabs/nonveg"
 import chefs from "./tabs/chefs"
@@ -38,7 +37,6 @@ homeBtn.addEventListener('click', (e) => {
 })
 
 menuBtn.addEventListener('click', (e) => {
-	console.log(dropdown)
 	if(dropdown.style.display == "block"){
 		dropdown.style.display = "none"
 	} else {
@@ -55,8 +53,8 @@ vegBtn.addEventListener('click', (e) => {
 nonvegBtn.addEventListener('click', (e) => {
 	variableContent.innerHTML = ""
 	nonveg();
-	closeMenuDrop()git status
-	
+	closeMenuDrop()
+
 })
 
 chefsBtn.addEventListener('click', (e) => {

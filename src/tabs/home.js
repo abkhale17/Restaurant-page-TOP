@@ -29,14 +29,32 @@ const home = () => {
 	const slide1 = document.createElement('img');
 	const slide2 = document.createElement('img');
 	const slide3 = document.createElement('img');
+	const slide4 = document.createElement('img');
 	gallery.setAttribute("id","gallery");
 	slide1.setAttribute("src","../src/assets/lph2.jpg")
 	slide2.setAttribute("src","../src/assets/lph3.jpg")
 	slide3.setAttribute("src","../src/assets/lph4.jpg")
+	slide4.setAttribute("src","../src/assets/lhp6.jpeg")
 	gallery.appendChild(slide1);
 	gallery.appendChild(slide2);
 	gallery.appendChild(slide3)
+	gallery.appendChild(slide4)
+
+	const div = document.createElement('div')
+	const a = document.createElement('a')
+	a.innerHTML = "Developed By: Abhishek Khale"
+	a.setAttribute("href","https://github.com/abkhale17")
+	div.style.backgroundColor = "#424242"
+	a.style.marginTop = "2%";
+	a.style.color = "white"
+	div.style.paddingTop= "8px";
+	div.style.paddingBottom = "8px";
+	div.style.paddingLeft= "8px";
+	a.style.textDecoration = "none"
+	
+	div.appendChild(a)
 	variableContent.appendChild(gallery)
+	variableContent.appendChild(div)
 	content.appendChild(variableContent)
 }
 
