@@ -55,7 +55,8 @@ vegBtn.addEventListener('click', (e) => {
 nonvegBtn.addEventListener('click', (e) => {
 	variableContent.innerHTML = ""
 	nonveg();
-	closeMenuDrop()
+	closeMenuDrop()git status
+	
 })
 
 chefsBtn.addEventListener('click', (e) => {
