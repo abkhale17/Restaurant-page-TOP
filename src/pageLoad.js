@@ -70,7 +70,7 @@ const pageLoad = () => {
 	description.setAttribute("id","descript");
 	description.setAttribute("class", "group");
 	section1.setAttribute("id","logo");
-	img.setAttribute("src","../src/assets/losPolosHermanos.jpg")
+	img.setAttribute("src","./assets/images/losPolosHermanos.jpg")
 	section2.setAttribute("id","info");
 	title.innerHTML = "Los Pollos Hermanos";
 	para.innerHTML = "Los Pollos Hermanos (Spanish for The Chicken Brothers) is a fried chicken fast food restaurant that originated in the television series Breaking Bad and Better Call Saul. In the fictional universe of Breaking Bad, Los Pollos Hermanos is a front organization for Gus Fring's meth manufacturing and distribution operation. The set used for the restaurant in the show was at a Twisters branch in South Valley, New Mexico, and Twisters has seen an increase in business attributed to being associated with Breaking Bad. Due to the show's popularity, Los Pollos Hermanos has appeared on numerous occasions and locations as a real-life pop-up restaurant."
@@ -88,10 +88,10 @@ const pageLoad = () => {
 	const slide3 = document.createElement('img');
 	const slide4 = document.createElement('img');
 	gallery.setAttribute("id","gallery");
-	slide1.setAttribute("src","../src/assets/lph2.jpg")
-	slide2.setAttribute("src","../src/assets/lph3.jpg")
-	slide3.setAttribute("src","../src/assets/lph4.jpg")
-	slide4.setAttribute("src","../src/assets/lhp6.jpeg")
+	slide1.setAttribute("src","./assets/images/lph2.jpg")
+	slide2.setAttribute("src","./assets/images/lph3.jpg")
+	slide3.setAttribute("src","./assets/images/lph4.jpg")
+	slide4.setAttribute("src","./assets/images/lhp6.jpeg")
 	gallery.appendChild(slide1);
 	gallery.appendChild(slide2);
 	gallery.appendChild(slide3)

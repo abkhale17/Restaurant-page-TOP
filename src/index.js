@@ -30,10 +30,16 @@ const closeMenuDrop = () => {
 	}
 }
 
-homeBtn.addEventListener('click', (e) => {
-	closeMenuDrop()
-	variableContent.innerHTML = ""
-	home()
+var tabs = [homeBtn , vegBtn, nonvegBtn, chefsBtn, contactsBtn, aboutUsBtn]
+var funcs = [home, veg, nonveg, chefs, contacts, about]
+
+tabs.forEach( (tab, index) => {
+	tab.addEventListener('click', (e) => {
+		closeMenuDrop()
+		variableContent.innerHTML = ""
+		var curTab = funcs[index]
+		curTab()
+	})
 })
 
 menuBtn.addEventListener('click', (e) => {
@@ -42,37 +48,6 @@ menuBtn.addEventListener('click', (e) => {
 	} else {
 		dropdown.style.display = "block"
 	}
-})
-
-vegBtn.addEventListener('click', (e) => {
-	variableContent.innerHTML = ""
-	veg();
-	closeMenuDrop()
-})
-
-nonvegBtn.addEventListener('click', (e) => {
-	variableContent.innerHTML = ""
-	nonveg();
-	closeMenuDrop()
-
-})
-
-chefsBtn.addEventListener('click', (e) => {
-	closeMenuDrop()
-	variableContent.innerHTML = ""
-	chefs();
-})
-
-contactsBtn.addEventListener('click', (e) => {
-	closeMenuDrop()
-	variableContent.innerHTML = ""
-	contacts();
-})
-
-aboutUsBtn.addEventListener('click', (e) => {
-	closeMenuDrop()
-	variableContent.innerHTML = ""
-	about();
 })
 
 variableContent.addEventListener('click', (e) => {
